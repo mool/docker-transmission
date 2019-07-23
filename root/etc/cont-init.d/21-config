@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+mkdir -p $TRANSMISSION_DOWNLOAD_DIR $TRANSMISSION_INCOMPLETE_DIR
+chown abc:abc $TRANSMISSION_DOWNLOAD_DIR $TRANSMISSION_INCOMPLETE_DIR
+
+dockerize -template /config/settings.tmpl:/config/settings.json

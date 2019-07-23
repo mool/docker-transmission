@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  transmission:
+    build: .
+    environment:
+      - TRANSMISSION_DOWNLOAD_DIR=/media/downloads/complete
+      - TRANSMISSION_INCOMPLETE_DIR=/media/downloads/incomplete
+      - TRANSMISSION_RPC_USERNAME=transmission
+      - TRANSMISSION_RPC_PASSWORD=secret
+      - TRANSMISSION_RPC_AUTHENTICATION_REQUIRED=true
+    ports:
+      - 9091:9091
