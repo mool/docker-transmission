@@ -6,7 +6,7 @@
 download_dir = ENV['TR_TORRENT_DIR']
 torrent_name = ENV['TR_TORRENT_NAME']
 torrent_id = ENV['TR_TORRENT_ID']
-target_path = '/storage'
+target_path = '/media'
 movies_path = "#{target_path}/movies"
 series_path = "#{target_path}/tvshows"
 
