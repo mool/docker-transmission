@@ -6,7 +6,7 @@
 download_dir = ENV['TR_TORRENT_DIR']
 torrent_name = ENV['TR_TORRENT_NAME']
 torrent_id = ENV['TR_TORRENT_ID']
-target_path = '/media'
+target_path = ENV['TARGET_PATH']
 movies_path = "#{target_path}/movies"
 series_path = "#{target_path}/tvshows"
 
@@ -14,8 +14,8 @@ telegram_token = ENV['TELEGRAM_TOKEN']
 telegram_chat_id = ENV['TELEGRAM_CHAT_ID']
 telegram_url = "https://api.telegram.org/bot#{telegram_token}/sendMessage"
 
-transmission_user = ENV['TRANSMISSION_USER']
-transmission_password = ENV['TRANSMISSION_PASSWORD']
+transmission_user = ENV['TRANSMISSION_RPC_USERNAME']
+transmission_password = ENV['TRANSMISSION_RPC_PASSWORD']
 #####################################################################
 
 require 'to_name'
