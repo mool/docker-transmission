@@ -1,7 +1,4 @@
-FROM linuxserver/transmission:2.94-r1-ls21
-
-RUN apk add --no-cache ruby ruby-rdoc && \
-  gem install toname
+FROM linuxserver/transmission:3.00-r2-ls81
 
 ARG DOCKERIZE_ARCH=amd64
 ARG DOCKERIZE_VERSION=v0.6.1
